@@ -1,19 +1,18 @@
-#import duolingo
+import duolingo
 import pygame
 from time import time, sleep
 from datetime import datetime
 
-# lingo  = duolingo.Duolingo('GriffinG52', '...') # TODO add password
+lingo  = duolingo.Duolingo('username', 'password') # TODO add password
 
 goal = 50
-
 
 pygame.mixer.init()
 
 print("checking")
 print(datetime.now().hour)
-# xp = lingo.get_daily_xp_progress()["xp_today"]
-xp = 0
+xp = lingo.get_daily_xp_progress()["xp_today"]
+# xp = 0
 if (xp >= goal):
     print("You did it!")
     pygame.mixer.music.load("goodJob.mp3")
