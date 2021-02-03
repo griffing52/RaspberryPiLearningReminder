@@ -25,7 +25,7 @@ crontab -e
 ```
 
 You can change when the program is run by changing the beginning part ("\*/30 16-21 * * \*")
-For help getting specific times, you can use this https://crontab.guru/#*/30_16-21_*_*_*_
+For help getting specific times, you can use this [Crontab Guru](https://crontab.guru/#*/30_16-21_*_*_*)
 
 After that is done, press ctrl+x, then press y, and finally press enter to save the new changes.
 
